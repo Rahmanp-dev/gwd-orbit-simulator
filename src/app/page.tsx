@@ -19,11 +19,9 @@ function Nav() {
     <nav className="fixed top-0 inset-x-0 z-50 h-14 bg-white/85 backdrop-blur-xl border-b border-[var(--line)]">
       <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform shadow-[var(--shadow-red)]" style={{ background: "var(--crimson)" }}>
-            <Rocket className="w-4 h-4 text-white" strokeWidth={2.5} />
-          </div>
+          <img src="/logo-red.png" alt="GWD Logo" className="h-8 w-auto object-contain group-hover:scale-105 transition-transform" />
           <span className="text-[15px] font-bold text-[var(--ink)] tracking-tight">
-            GWD <span className="text-[var(--crimson)]">Orbit</span>
+            Orbit
           </span>
         </Link>
 
@@ -629,17 +627,59 @@ function CTA() {
 ═══════════════════════════════════════════════════════ */
 function Footer() {
   return (
-    <footer className="bg-[var(--dark)] py-8 border-t border-white/5">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-2.5">
-          <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: "var(--crimson)" }}>
-            <Rocket className="w-3.5 h-3.5 text-white" strokeWidth={2.5} />
+    <footer className="bg-[var(--dark)] pt-16 pb-8 border-t border-white/5">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+        {/* Column 1: Brand & Logo */}
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-2.5 group">
+            <img src="/logo-white.png" alt="GWD Logo" className="h-9 w-auto object-contain" />
+            <span className="text-[16px] font-bold text-white tracking-tight">
+              Orbit
+            </span>
           </div>
-          <span className="text-[13px] font-bold text-white/80 tracking-tight">BizSim by GWD Global</span>
+          <p className="text-[13px] text-white/50 leading-relaxed max-w-sm">
+            An AI-powered freelance ecosystem transforming local gig execution and remote talent delivery.
+          </p>
         </div>
-        <div className="text-[11px] text-white/25 font-mono">© 2026 GWD Global Pvt Ltd. All rights reserved.</div>
-        <div className="flex gap-5 text-[12px] text-white/35">
-          {["Terms","Privacy","Contact"].map(l=>(
+
+        {/* Column 2: Contact Info */}
+        <div className="flex flex-col gap-4">
+          <h4 className="text-[12px] font-bold tracking-[0.14em] text-white/80 uppercase font-mono">Contact Us</h4>
+          <div className="flex flex-col gap-2.5 text-[13px] text-white/50 leading-relaxed">
+            <div className="flex items-start gap-2">
+              <span className="text-white/35 font-mono">Mail:</span>
+              <a href="mailto:rahman@gwdglobal.in" className="hover:text-white transition-colors">rahman@gwdglobal.in</a>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-white/35 font-mono">Tel:</span>
+              <a href="tel:+917981374451" className="hover:text-white transition-colors">+91 79813 74451</a>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-white/35 font-mono">Web:</span>
+              <a href="https://gwdglobal.in" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">gwdglobal.in</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Column 3: Address */}
+        <div className="flex flex-col gap-4">
+          <h4 className="text-[12px] font-bold tracking-[0.14em] text-white/80 uppercase font-mono">Headquarters</h4>
+          <p className="text-[13px] text-white/50 leading-relaxed max-w-xs">
+            GWD Global Pvt Ltd<br />
+            2-56/33/15/A, Sri Sai Nagar,<br />
+            Madhapur, Hyderabad, Telangana - 500081
+          </p>
+        </div>
+      </div>
+
+      <div className="h-px bg-white/5 max-w-6xl mx-auto mb-8" />
+
+      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-[11px] text-white/35 font-mono">
+          © 2026 GWD Global Pvt Ltd. All rights reserved.
+        </div>
+        <div className="flex gap-6 text-[12px] text-white/35">
+          {["Terms & Conditions", "Privacy Policy", "BizSim Rules"].map((l) => (
             <a key={l} href="#" className="hover:text-white/70 transition-colors">{l}</a>
           ))}
         </div>
