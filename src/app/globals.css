@@ -249,7 +249,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--ink-4);
+  color: var(--text-muted);
   display: block;
   margin-bottom: 12px;
 }
@@ -317,7 +317,7 @@ hr.subtle {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 70% 30%, transparent 15%, var(--bg) 85%);
+  background: radial-gradient(circle at 50% 50%, transparent 40%, var(--bg) 95%);
   pointer-events: none;
 }
 

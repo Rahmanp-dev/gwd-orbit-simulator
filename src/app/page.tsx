@@ -29,7 +29,7 @@ function Nav() {
 
         <div className="hidden md:flex items-center gap-6">
           {[["#how","How it works"],["#prizes","Prizes"],["#roles","Roles"],["#faq","FAQ"]].map(([h,l])=>(
-            <a key={h} href={h} className="text-[13px] text-[var(--text-muted)] hover:text-[var(--ink)] transition-colors font-medium">
+            <a key={h} href={h} className="text-[13px] text-[var(--text-secondary)] hover:text-[var(--ink)] transition-colors font-semibold">
               {l}
             </a>
           ))}
@@ -43,7 +43,7 @@ function Nav() {
             </Link>
           ) : (
             <>
-              <Link href="/login" className="text-[13px] font-medium text-[var(--text-muted)] hover:text-[var(--ink)] transition-colors px-3 py-2">
+              <Link href="/login" className="text-[13px] font-semibold text-[var(--text-secondary)] hover:text-[var(--ink)] transition-colors px-3 py-2">
                 Log in
               </Link>
               <Link href="/register" className="btn-red text-[13px] !py-2 !px-4">
@@ -74,7 +74,7 @@ function Hero() {
               <span className="live-ring" />
               Live Simulation
             </span>
-            <span className="text-[12px] text-[var(--ink-4)] font-medium font-mono">BizSim 2026</span>
+            <span className="text-[12px] text-[var(--text-muted)] font-semibold font-mono">BizSim 2026</span>
           </div>
 
           {/* Headline — Instrument Serif, editorial gravitas */}
@@ -112,7 +112,7 @@ function Hero() {
               { icon: MapPin,      text: "Hyderabad",           c:"var(--text-muted)" },
               { icon: Clock,       text: "9-day live event",    c:"#2563EB" },
             ].map(({ icon:Ic, text, c }) => (
-              <span key={text} className="flex items-center gap-1.5 text-[12px] text-[var(--ink-4)] font-medium">
+              <span key={text} className="flex items-center gap-1.5 text-[12px] text-[var(--text-secondary)] font-semibold">
                 <Ic className="w-3.5 h-3.5 flex-shrink-0" style={{ color: c }} strokeWidth={2} />
                 {text}
               </span>
@@ -131,7 +131,7 @@ function Hero() {
                   <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
                   <div className="w-3 h-3 rounded-full bg-[#27C93F]" />
                 </div>
-                <span className="text-[12px] font-medium text-[var(--ink-4)] ml-1 font-mono">
+                <span className="text-[12px] font-semibold text-[var(--text-muted)] ml-1 font-mono">
                   orbit-dashboard.live
                 </span>
               </div>
@@ -148,7 +148,7 @@ function Hero() {
           </div>
 
           {/* Scroll hint */}
-          <div className="flex items-center justify-center gap-1.5 mt-6 text-[11px] text-[var(--ink-4)] font-mono">
+          <div className="flex items-center justify-center gap-1.5 mt-6 text-[11px] text-[var(--text-muted)] font-semibold font-mono">
             <ChevronDown className="w-3.5 h-3.5 animate-bounce" />
             scroll to explore
           </div>
