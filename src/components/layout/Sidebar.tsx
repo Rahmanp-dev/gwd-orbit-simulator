@@ -345,10 +345,10 @@ export function Sidebar({ collapsed, onToggle, className }: SidebarProps) {
         className="flex items-center justify-between px-4 sm:px-5 h-16 border-b flex-shrink-0"
         style={{ borderColor: 'var(--border)' }}
       >
-        <div className="flex items-center gap-3 group">
-          <img src="/logo-red.png" alt="GWD Logo" className="h-7 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+        <div className="flex items-center gap-1.5 group">
+          <img src="/logo-red.png" alt="GWD Logo" className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
           {!collapsed && (
-            <div className="flex flex-col leading-tight animate-fade-in">
+            <div className="flex flex-col leading-tight animate-fade-in -ml-1">
               <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--crimson)] flex items-center gap-1">
                 <span className="live-ring" style={{ transform: 'scale(0.7)' }} />
                 Orbit OS
