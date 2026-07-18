@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /leaderboard
+Disallow: /admin
+Disallow: /organizer
+Disallow: /judge
+Disallow: /api/
+Disallow: /war-room
+Disallow: /deals
+Disallow: /niche
+Disallow: /dashboard
+
+Sitemap: https://orbit.yourgwd.com/sitemap.xml
