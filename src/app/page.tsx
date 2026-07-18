@@ -16,10 +16,10 @@ import { useSession } from "next-auth/react";
 function Nav() {
   const { data: session } = useSession();
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 h-20 bg-white/85 backdrop-blur-xl border-b border-[var(--line)]">
+    <nav className="fixed top-0 inset-x-0 z-50 h-14 bg-white/85 backdrop-blur-xl border-b border-[var(--line)]">
       <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <img src="/logo-red.png" alt="GWD Logo" className="h-16 w-auto object-contain group-hover:scale-105 transition-transform" />
+          <img src="/logo-red.png" alt="GWD Logo" className="h-8 w-auto object-contain group-hover:scale-105 transition-transform" />
           <span className="text-[15px] font-bold text-[var(--ink)] tracking-tight">
             Orbit
           </span>
@@ -61,7 +61,7 @@ function Nav() {
 ═══════════════════════════════════════════════════════ */
 function Hero() {
   return (
-    <section className="hero-mesh pt-20 min-h-screen flex flex-col">
+    <section className="hero-mesh pt-14 min-h-screen flex flex-col">
       <div className="flex-1 max-w-6xl mx-auto w-full px-6 grid lg:grid-cols-[1fr_420px] gap-12 xl:gap-20 items-center py-20">
 
         {/* ── Left column — editorial headline ── */}
@@ -631,9 +631,9 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
         {/* Column 1: Brand & Logo */}
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-3 group">
-            <img src="/logo-white.png" alt="GWD Logo" className="h-28 w-auto object-contain" />
-            <span className="text-[20px] font-bold text-white tracking-tight">
+          <div className="flex items-center gap-2 group">
+            <img src="/logo-white.png" alt="GWD Logo" className="h-10 w-auto object-contain" />
+            <span className="text-[16px] font-bold text-white tracking-tight">
               Orbit
             </span>
           </div>

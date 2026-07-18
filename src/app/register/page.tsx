@@ -81,16 +81,16 @@ export default function RegisterPage() {
       <div className="hidden lg:flex flex-1 bg-[var(--dark)] items-center justify-center p-12">
         <div className="max-w-lg">
           <div className="text-6xl mb-6">⚡</div>
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold mb-4" style={{ color: '#FFFFFF' }}>
             Join India&apos;s First
             <br />
             <span className="text-[var(--crimson)]">Live Business Simulation</span>
           </h2>
           <div className="space-y-3 mt-8">
             {["9 days of real business warfare", "50+ verified SMB leads per team", "₹1.2 Lakh prize pool", "Founding position in GWD Orbit"].map((item) => (
-              <div key={item} className="flex items-center gap-3 text-gray-300">
+              <div key={item} className="flex items-center gap-3">
                 <CheckCircle2 className="w-4 h-4 text-[var(--crimson)] flex-shrink-0" />
-                <span className="text-sm">{item}</span>
+                <span className="text-sm font-medium" style={{ color: '#D4D4D8' }}>{item}</span>
               </div>
             ))}
           </div>
@@ -101,9 +101,7 @@ export default function RegisterPage() {
       <div className="flex-1 flex items-center justify-center px-6 py-12">
         <div className="w-full max-w-md">
           <div className="flex items-center gap-2 mb-8">
-            <div className="w-10 h-10 rounded-full bg-[var(--crimson)] flex items-center justify-center">
-              <Rocket className="w-5 h-5 text-white" />
-            </div>
+            <img src="/logo-red.png" alt="GWD Logo" className="h-10 w-auto object-contain" />
             <span className="font-bold text-xl tracking-tight">Orbit Simulator</span>
           </div>
 

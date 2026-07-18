@@ -342,11 +342,11 @@ export function Sidebar({ collapsed, onToggle, className }: SidebarProps) {
     >
       {/* ── Logo ─────────────────────────────────────────── */}
       <div
-        className="flex items-center justify-between px-4 sm:px-5 h-20 border-b flex-shrink-0"
+        className="flex items-center justify-between px-4 sm:px-5 h-16 border-b flex-shrink-0"
         style={{ borderColor: 'var(--border)' }}
       >
         <div className="flex items-center gap-2.5 group">
-          <img src="/logo-red.png" alt="GWD Logo" className="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+          <img src="/logo-red.png" alt="GWD Logo" className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
           {!collapsed && (
             <div className="flex flex-col leading-tight animate-fade-in">
               <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--crimson)] flex items-center gap-1">
