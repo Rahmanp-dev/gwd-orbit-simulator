@@ -18,9 +18,9 @@ function Nav() {
   return (
     <nav className="fixed top-0 inset-x-0 z-50 h-14 bg-white/85 backdrop-blur-xl border-b border-[var(--line)]">
       <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-1 group">
-          <img src="/logo-red.png" alt="GWD Logo" className="h-14 w-auto object-contain group-hover:scale-105 transition-transform" />
-          <span className="text-[15px] font-bold text-[var(--ink)] tracking-tight -ml-1">
+        <Link href="/" className="flex items-center gap-2 group">
+          <img src="/logo-red.png" alt="GWD Logo" className="h-8 w-auto object-contain group-hover:scale-105 transition-transform" />
+          <span className="text-[15px] font-bold text-[var(--ink)] tracking-tight">
             Orbit
           </span>
         </Link>
@@ -631,9 +631,9 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
         {/* Column 1: Brand & Logo */}
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-1 group">
-            <img src="/logo-white.png" alt="GWD Logo" className="h-16 w-auto object-contain" />
-            <span className="text-[16px] font-bold text-white tracking-tight -ml-1">
+          <div className="flex items-center gap-2 group">
+            <img src="/logo-white.png" alt="GWD Logo" className="h-9 w-auto object-contain" />
+            <span className="text-[16px] font-bold text-white tracking-tight">
               Orbit
             </span>
           </div>
